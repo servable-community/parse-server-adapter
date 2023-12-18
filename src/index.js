@@ -9,12 +9,8 @@ import launchLiveServer from './liveServer/index.js'
 // import adaptConfigurationStaging from './adaptConfig/_setConfigurations/staging/index.js'
 import setConfigurations from './adaptConfig/setConfigurations/index.js'
 
-import {
-  appObject,
-  appCloud, appQuery, appUtils, appLiveQuery, appUser, appSession, appSchema,
-  appInstallation, appConfig,
-  appRole
-} from './register/index.js'
+import adaptApp from './register/index.js'
+import adaptAppNative from './register/index.native.js'
 
 export default {
   createApp,
@@ -24,17 +20,8 @@ export default {
   doLaunch,
   launchLiveServer,
   setConfigurations,
-  appCloud,
-  appObject,
-  appQuery,
-  appUtils,
-  appLiveQuery,
-  appUser,
-  appSchema,
-  appSession,
-  appInstallation,
-  appConfig,
-  appRole
+  adaptApp,
+  adaptAppNative
   // adaptConfigurationStaging,
   // adaptConfigurationProduction
 }
