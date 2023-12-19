@@ -1,0 +1,53 @@
+{
+  "type": "frameworkadapter",
+  "version": "1.0.0",
+  "id": "@servable/parse-server-adapter",
+  "name": "Parse Server Adapter",
+  "description": "Parse Server Adapter",
+  "homepage": "",
+  "icon": "",
+  "author": {
+    "name": "Servable Community",
+    "email": "servablecommunity@gmail.com",
+    "url": "",
+    "github": ""
+  },
+  "keywords": [],
+  "license": "MIT",
+  "forks": {},
+  "apis": [
+    {
+      "id": "Object",
+      "version": "*"
+    },
+    {
+      "id": "Cloud",
+      "version": "*"
+    },
+    {
+      "id": "User",
+      "version": "*"
+    },
+    {
+      "id": "Role",
+      "version": "*"
+    },
+    {
+      "id": "Session",
+      "version": "*"
+    },
+    {
+      "id": "Installation",
+      "version": "*"
+    },
+    {
+      "id": "Config",
+      "version": "*"
+    },
+    {
+      "id": "LiveQuery",
+      "version": "*"
+    }
+  ],
+  "registry": {}
+}

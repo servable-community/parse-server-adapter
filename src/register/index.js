@@ -1,5 +1,7 @@
 import _parse from './parse/index.js'
 import ParseServer from "parse-server"
+import route from './route/index.js'
+
 ParseServer.S3Adapter
 
 export default async ({ servableEngineConfig }) => ({
@@ -15,5 +17,6 @@ export default async ({ servableEngineConfig }) => ({
   Schema: Parse.Schema,
   Config: Parse.Config,
   Schema: Parse.Schema,
+  Route: route({ servableEngineConfig })
 })
 

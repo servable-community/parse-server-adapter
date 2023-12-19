@@ -107,6 +107,6 @@ export default async ({ config, serverCloseComplete, app }) => {
       }
     })
     // Await server.start()
-    app.use(config.parse.mountPath, server)
+    app.use(config.parse.vint, server)
   })
 }
