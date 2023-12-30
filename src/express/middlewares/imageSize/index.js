@@ -1,11 +1,7 @@
 //import fsw from 'filendir'
 import sharp from 'sharp'
 import { parser } from 'query-string-parse'
-
 import axios from "axios"
-
-
-
 import stream from 'stream'
 
 const cachedExists = async () => {
@@ -16,7 +12,7 @@ export default (path) => {
 
     return async (request, response, next) => {
         const parts = request.url.split('/')
-        parts.shift() // remove first slash 
+        parts.shift() // remove first slash
         parts.shift() // remove api-slug (differs per parse-config)
         const isFile = parts.length == 3 & parts[0] == "files"
         //const parrr = urlParse(req.url)

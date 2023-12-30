@@ -49,5 +49,71 @@
       "version": "*"
     }
   ],
+  "usage": {
+    "howto": "",
+    "template": {
+      "id": "@servable/parse-server-adapter",
+      "slug": "parse-server",
+      "params": {
+        "appMasterKey": "<%= appMasterKey %>",
+        "appId": "<%= appId %>",
+        "appJavascriptKey": "<%= appJavascriptKey %>",
+        "appName": "<%= appName %>",
+        "appDescription": "<%= appDescription %>",
+        "appEndpoint": "<%= appEndpoint %>",
+        "appDistributionType": "<%= appDistributionType %>",
+        "appUseCache": "<%= appUseCache %>",
+        "appUseDashboard": "<%= appUseDashboard %>",
+        "appDashboardMainPassword": "<%= appDashboardMainPassword %>",
+        "appDashboardPort": "<%= appDashboardPort %>",
+        "appCachePort": "<%= appCachePort %>",
+        "appConfigurations": "<%= appConfigurations %>",
+        "appDatabasePort": "<%= appDatabasePort %>",
+        "appPort": "<%= appPort %>",
+        "appDatabaseType": "<%= appDatabaseType %>",
+        "appUtilsDatabasePort": "<%= appUtilsDatabasePort %>",
+        "appLiveQueryCachePort": "<%= appLiveQueryCachePort %>",
+        "appUseLocalS3": "<%= appUseLocalS3 %>",
+        "appMinioUser": "<%= appMinioUser %>",
+        "appMinioPassword": "<%= appMinioPassword %>",
+        "appMinioEndpoint": "<%= appMinioEndpoint %>",
+        "appMinioBucket": "<%= appMinioBucket %>",
+        "appS3ApiPort": "<%= appS3ApiPort %>",
+        "appS3UIPort": "<%= appS3UIPort %>",
+        "env": "process.env.NODE_ENV",
+        "schema": {
+          "exclude": false
+        }
+      }
+    },
+    "parameters": [
+      {
+        "id": "appId",
+        "prompt": {
+          "type": "string",
+          "name": "appId",
+          "message": "App id",
+          "validators": [
+            {
+              "type": "nonEmpty"
+            }
+          ]
+        }
+      },
+      {
+        "id": "appMasterKey",
+        "prompt": {
+          "type": "string",
+          "name": "appMasterKey",
+          "message": "Master Key",
+          "validators": [
+            {
+              "type": "nonEmpty"
+            }
+          ]
+        }
+      }
+    ]
+  },
   "registry": {}
 }
