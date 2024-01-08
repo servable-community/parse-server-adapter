@@ -1,5 +1,5 @@
 {
-  "type": "frameworkadapter",
+  "type": "frameworkbridge",
   "version": "1.0.0",
   "id": "@servable/parse-server-adapter",
   "name": "Parse Server Adapter",

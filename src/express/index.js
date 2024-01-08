@@ -13,7 +13,7 @@ export default async () => {
   // const whitelist = [
   //   'localhost',
   //   'abounak.local',
-  //   'servablecommunity.com'
+  //   'servable.app'
   // ]
 
   // const corsOptions = {
