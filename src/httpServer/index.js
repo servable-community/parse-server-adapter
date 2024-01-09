@@ -14,7 +14,7 @@ export default async ({ app }) => {
         resolve(httpServer)
       })
     } catch (e) {
-      console.error("[Servable]", '[DEBUG]', 'createHttpServer', e)
+      console.error("[PARSE_SERVER_ADAPTER]", '[DEBUG]', 'createHttpServer', e)
       reject(e)
     }
   })

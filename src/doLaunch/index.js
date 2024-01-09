@@ -7,7 +7,7 @@ const __dirname = dirname(__filename)
 
 export default async ({ config, serverCloseComplete, app }) => {
   const { parse: parseConfig } = config
-  console.log('[SERVABLE]', '[DEBUG]', 'dolaunch>', config,)
+  console.log('[PARSE_SERVER_ADAPTER]', '[DEBUG]', 'dolaunch>', config,)
   const schema = {
     ...(parseConfig.schema ? parseConfig.schema : {}),
     // Parse Schema API will be disabled
@@ -32,7 +32,7 @@ export default async ({ config, serverCloseComplete, app }) => {
         parseConfig.schema.beforeMigration()
       }
 
-      console.log("[Servable]", "\n")
+      console.log("[PARSE_SERVER_ADAPTER]", "\n")
       if (parseConfig.schema && parseConfig.schema.definitions) {
         console.debug(
           `---------------- 🍯 ${parseConfig.schema.definitions.length
@@ -42,22 +42,22 @@ export default async ({ config, serverCloseComplete, app }) => {
         )
       }
 
-      console.log("[Servable]", "\n")
+      console.log("[PARSE_SERVER_ADAPTER]", "\n")
       parseConfig.liveClasses &&
         console.debug(
           `---------------- ⚡️ ${parseConfig.liveClasses.length
           } live classes ⚡️:\n ${liveClasses.map(a => ` ${a}`)}`
         )
-      console.log("[Servable]", "\n")
-      console.log("[Servable]", "---------------- 🧐 launching migration 😰😰")
-      console.log("[Servable]", "\n")
+      console.log("[PARSE_SERVER_ADAPTER]", "\n")
+      console.log("[PARSE_SERVER_ADAPTER]", "---------------- 🧐 launching migration 😰😰")
+      console.log("[PARSE_SERVER_ADAPTER]", "\n")
     },
     afterMigration: async () => {
       if (parseConfig.schema && parseConfig.schema.afterMigration) {
         parseConfig.schema.afterMigration()
       }
 
-      console.log("[Servable]", "---------------- 🥰 afterMigration 😍😍")
+      console.log("[PARSE_SERVER_ADAPTER]", "---------------- 🥰 afterMigration 😍😍")
     }
   }
 
@@ -83,7 +83,7 @@ export default async ({ config, serverCloseComplete, app }) => {
     const server = new ParseServer({
       ...options,
       serverCloseComplete: async () => {
-        console.log("[Servable]", "serverCloseComplete")
+        console.log("[PARSE_SERVER_ADAPTER]", "serverCloseComplete")
         serverCloseComplete && serverCloseComplete()
       },
       serverStartComplete: async error => {
@@ -95,7 +95,7 @@ export default async ({ config, serverCloseComplete, app }) => {
           return
         }
 
-        console.log("[Servable]",
+        console.log("[PARSE_SERVER_ADAPTER]",
           "---------------- 😍😍 serverStartComplete, resolving 😍😍"
         )
         resolve(server)

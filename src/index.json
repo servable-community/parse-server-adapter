@@ -2,8 +2,8 @@
   "type": "frameworkbridge",
   "version": "1.0.0",
   "id": "@servable/parse-server-adapter",
-  "name": "Parse Server Adapter",
-  "description": "Parse Server Adapter",
+  "name": "Parse Server Bridge",
+  "description": "Parse Server Bridge with Agenda for jobs. Comes with a complete system management for Parse dashboad, cache and livequery.",
   "homepage": "",
   "icon": "",
   "author": {
@@ -11,6 +11,10 @@
     "email": "servablecommunity@gmail.com",
     "url": "",
     "github": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/servable-community/parse-server-adapter.git"
   },
   "keywords": [],
   "license": "MIT",
@@ -26,6 +30,10 @@
     },
     {
       "id": "User",
+      "version": "*"
+    },
+    {
+      "id": "ACL",
       "version": "*"
     },
     {

@@ -6,7 +6,6 @@ import launchWithNoMigration from './launchWithNoMigration/index.js'
 import launchWithMigration from './launchWithMigration/index.js'
 import doLaunch from './doLaunch/index.js'
 import launchLiveServer from './liveServer/index.js'
-// import adaptConfigurationStaging from './adaptConfig/_setConfigurations/staging/index.js'
 import setConfigurations from './adaptConfig/setConfigurations/index.js'
 
 import adaptApp from './register/index.js'
@@ -22,6 +21,4 @@ export default {
   setConfigurations,
   adaptApp,
   adaptAppNative
-  // adaptConfigurationStaging,
-  // adaptConfigurationProduction
 }

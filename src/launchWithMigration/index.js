@@ -3,7 +3,7 @@ import doLaunch from "../doLaunch/index.js"
 
 export default async (props) => {
   const { schema, configuration, app } = props
-  console.log('[SERVABLE]', '[DEBUG]', 'launchwithmigration>', schema, configuration)
+  console.log('[PARSE_SERVER_ADAPTER]', '[DEBUG]', 'launchwithmigration>', schema, configuration)
 
   const { appProtocol, liveClasses } = schema
   const {

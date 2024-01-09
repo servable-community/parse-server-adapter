@@ -18,6 +18,7 @@ export default async ({ servableEngineConfig }) => ({
   Schema: Parse.Schema,
   Config: Parse.Config,
   Schema: Parse.Schema,
+  ACL: Parse.ACL,
   Route: route({ servableEngineConfig }),
   Jobs: jobs({ servableEngineConfig })
 })

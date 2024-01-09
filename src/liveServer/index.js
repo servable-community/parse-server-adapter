@@ -5,11 +5,11 @@ export default async ({ httpServer, servableEngineConfig }) => {
   //   return
   // }
   // try {
-  console.log("[Servable]", `Launch > Live query > Start`)
+  console.log("[PARSE_SERVER_ADAPTER]", `Launch > Live query > Start`)
   ParseServer.createLiveQueryServer(httpServer)
-  console.log("[Servable]", `Launch > Live query > Success`)
+  console.log("[PARSE_SERVER_ADAPTER]", `Launch > Live query > Success`)
   // } catch (e) {
-  //   console.log("[Servable]", `Launch > Live query 🚀 > Error`)
+  //   console.log("[PARSE_SERVER_ADAPTER]", `Launch > Live query 🚀 > Error`)
   //   console.error(e)
   // }
 }
